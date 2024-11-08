@@ -1,0 +1,81 @@
+.sidebar {
+    max-height: 100vh; /* Use max-height to fit within viewport */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.sidebar img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.sidebar .menu {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat {
+    margin-top: 20px; /* Adjusted for more space in mobile */
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 6px 10px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+
+.sidebar .recent {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 1.5s;
+}
+
+.sidebar .recent-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 10px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #e2e6eb;
+}
+
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between Help, Activity, and Settings */
+}
+
+.sidebar .bottom-item {
+    padding: 6px 10px; /* Adds padding for better spacing */
+    cursor: pointer;
+}
+
+
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+
+}
